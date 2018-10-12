@@ -133,6 +133,7 @@ defmodule ElixirMath do
       3269017.3724721107
 
   """
+  @spec exp(float) :: float
   def exp(x), do: :math.exp(x)
 
   @doc ~S"""
@@ -144,6 +145,7 @@ defmodule ElixirMath do
   15.0
 
   """
+  @spec floor(float) :: float
   def floor(x), do: :math.floor(x)
 
   @doc ~S"""
@@ -155,6 +157,7 @@ defmodule ElixirMath do
   3.0
 
   """
+  @spec fmod(float, float) :: float
   def fmod(x, y), do: :math.fmod(x, y)
 
   @doc ~S"""
@@ -166,6 +169,7 @@ defmodule ElixirMath do
   2.70805020110221
 
   """
+  @spec log(float) :: float
   def log(x), do: :math.log(x)
 
   @doc ~S"""
@@ -177,6 +181,7 @@ defmodule ElixirMath do
   1.1760912590556813
 
   """
+  @spec log10(float) :: float
   def log10(x), do: :math.log10(x)
 
   @doc ~S"""
@@ -188,6 +193,7 @@ defmodule ElixirMath do
   3.9068905956085187
 
   """
+  @spec log2(float) :: float
   def log2(x), do: :math.log2(x)
 
   @doc ~S"""
@@ -199,6 +205,7 @@ defmodule ElixirMath do
   256.0
 
   """
+  @spec pow(float, float) :: float
   def pow(x, y), do: :math.pow(x, y)
 
   @doc ~S"""
@@ -210,6 +217,7 @@ defmodule ElixirMath do
   0.6502878401571169
 
   """
+  @spec sin(float) :: float
   def sin(x), do: :math.sin(x)
 
   @doc ~S"""
@@ -221,6 +229,7 @@ defmodule ElixirMath do
   0.5210953054937474
 
   """
+  @spec sinh(float) :: float
   def sinh(x), do: :math.sinh(x)
 
   @doc ~S"""
@@ -232,6 +241,7 @@ defmodule ElixirMath do
   10.0
 
   """
+  @spec sqrt(float) :: float
   def sqrt(x), do: :math.sqrt(x)
 
   @doc ~S"""
@@ -243,6 +253,7 @@ defmodule ElixirMath do
   -0.8559934009085189
 
   """
+  @spec tan(float) :: float
   def tan(x), do: :math.tan(x)
 
   @doc ~S"""
@@ -254,6 +265,7 @@ defmodule ElixirMath do
   0.46211715726000974
 
   """
+  @spec tanh(float) :: float
   def tanh(x), do: :math.tanh(x)
 
   @doc ~S"""
@@ -265,6 +277,7 @@ defmodule ElixirMath do
   1.0
 
   """
+  @spec erf(float) :: float
   def erf(x), do: :math.erf(x)
 
   @doc ~S"""
@@ -276,6 +289,7 @@ defmodule ElixirMath do
   0.7772974107895215
 
   """
+  @spec erfc(float) :: float
   def erfc(x), do: :math.erfc(x)
 
   @doc ~S"""
@@ -287,5 +301,6 @@ defmodule ElixirMath do
   3.141592653589793
 
   """
+  @spec pi() :: float
   def pi(), do: :math.pi()
 end
