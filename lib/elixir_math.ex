@@ -1,7 +1,9 @@
 defmodule ElixirMath do
   @moduledoc """
-  Documentation for ElixirMath.
+  Math library for Elixir.
   """
+
+  alias ElixirMath.PrimeGenerator
 
   @doc ~S"""
   Returns the arccosine of a number.
@@ -207,6 +209,20 @@ defmodule ElixirMath do
   """
   @spec pow(float, float) :: float
   def pow(x, y), do: :math.pow(x, y)
+
+  @doc ~S"""
+  Returns a list of prime numbers.
+
+  ## Examples
+
+      iex> ElixirMath.prime_numbers(10)
+      [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
+  """
+  @spec prime_numbers(number) :: list
+  def prime_numbers(count \\ 10) do
+    PrimeGenerator.prime_numbers(count)
+  end
 
   @doc ~S"""
   Returns the sine of a number.
