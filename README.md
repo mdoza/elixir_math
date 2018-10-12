@@ -1,6 +1,6 @@
 # ElixirMath
 
-**TODO: Add description**
+A math library for Elixir applications.
 
 ## Installation
 
