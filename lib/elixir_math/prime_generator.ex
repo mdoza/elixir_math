@@ -15,6 +15,19 @@ defmodule ElixirMath.PrimeGenerator do
     |> Enum.take(count)
   end
 
+  @doc ~S"""
+  Returns true if a number is prime.
+
+  ## Examples
+
+      iex> ElixirMath.PrimeGenerator.is_prime(3)
+      true
+
+      iex> ElixirMath.PrimeGenerator.is_prime(10)
+      false
+
+  """
+  @spec is_prime(integer) :: boolean
   def is_prime(2), do: true
   def is_prime(n) when n < 2 or rem(n, 2) == 0, do: false
   def is_prime(n), do: is_prime(n, 3)

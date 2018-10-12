@@ -350,4 +350,18 @@ defmodule ElixirMath do
   """
   @spec pi() :: float
   def pi(), do: :math.pi()
+
+  @doc ~S"""
+  Returns true if a number is prime.
+
+  ## Examples
+
+      iex> ElixirMath.PrimeGenerator.is_prime(3)
+      true
+
+       iex> ElixirMath.PrimeGenerator.is_prime(10)
+       false
+
+  """
+  def is_prime(x), do: PrimeGenerator.is_prime(x)
 end
