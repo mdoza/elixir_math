@@ -163,7 +163,7 @@ defmodule ElixirMath do
   def fmod(x, y), do: :math.fmod(x, y)
 
   @doc ~S"""
-  Return the greatest common divisor of a set of numbers.
+  Returns the greatest common divisor of a set of numbers.
 
   ## Example
 
@@ -177,6 +177,21 @@ defmodule ElixirMath do
   @spec gcd(integer, integer) :: integer
   def gcd(x, 0), do: abs(x)
   def gcd(x, y), do: gcd(y, rem(x, y))
+
+  @doc ~S"""
+  Returns the least common multiple of a set of numbers.
+
+  ## Examples
+
+      iex> ElixirMath.lcm(90, 9)
+      90
+
+      iex> ElixirMath.lcm(9, 90)
+      90
+
+  """
+  @spec lcm(integer, integer) :: integer
+  def lcm(x, y), do: div(abs(x * y), gcd(x, y))
 
   @doc ~S"""
   Returns the logarithm of a number.
