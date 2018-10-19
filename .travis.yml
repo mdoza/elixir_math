@@ -1,0 +1,10 @@
+language: elixir
+sudo: false
+elixir: 1.7.3
+otp_release: 21.1
+notifications:
+  recipients:
+    - mdoza@me.com
+env:
+  global:
+    - MIX_ENV=test
