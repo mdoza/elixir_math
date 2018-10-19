@@ -356,11 +356,11 @@ defmodule ElixirMath do
 
   ## Examples
 
-      iex> ElixirMath.PrimeGenerator.is_prime(3)
+      iex> ElixirMath.is_prime(3)
       true
 
-       iex> ElixirMath.PrimeGenerator.is_prime(10)
-       false
+      iex> ElixirMath.is_prime(10)
+      false
 
   """
   def is_prime(x), do: PrimeGenerator.is_prime(x)
