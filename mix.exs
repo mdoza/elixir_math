@@ -14,7 +14,11 @@ defmodule ElixirMath.MixProject do
       source_url: "https://github.com/mdoza/elixir_math",
       docs: [
         main: "ElixirMath"
-      ]
+      ],
+
+      # Package info
+      description: description(),
+      package: package()
     ]
   end
 
@@ -22,6 +26,20 @@ defmodule ElixirMath.MixProject do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  def description do
+    """
+    Math library for Elixir applications.
+    """
+  end
+
+  def package do
+    [
+      maintainers: ["Matt Doza"],
+      licenses: ["BSD"],
+      links: %{"GitHub": "https://github.com/mdoza/elixir_math"}
     ]
   end
 
