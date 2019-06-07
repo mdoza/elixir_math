@@ -4,7 +4,7 @@ defmodule ElixirMath.MixProject do
   def project do
     [
       app: :elixir_math,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
